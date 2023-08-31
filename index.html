@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dhrituu Babee Birthday</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1 class="title">Dhrituu Babee Birthday</h1>
+  <div class="container">
+    <div class="cake" id="cakeContainer" style="display: none;">
+      <div class="cake__candle"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cutegif" id="cutegif">
+      <img src="cutegif.gif" onclick="playMusic()" alt="YOOOO PRETTY GIRL">
+    </div>
+  </div>
+  <!-- <div class="tenor-gif-embed" data-postid="14125279" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+    <a
+      href="https://tenor.com/view/husky-and-shiba-%E4%BA%8C%E5%93%88%E8%90%8C%E6%9F%B4%E5%BE%AE%E4%BF%A1%E8%A1%A8%E6%83%85-cute-gif-14125279">Husky
+      And Shiba 二哈萌柴微信表情 Sticker</a>from <a href="https://tenor.com/search/husky+and+shiba-stickers">Husky And Shiba
+      Stickers</a></div> -->
+      <div id="js-clock1" class="clock1">
+        <div class="clock__days">
+          <span id="js-days"></span>
+      <div>Days</div>
+    </div>
+    <div class="clock__hours">
+      <span id="js-hours"></span>
+      <div>Hours</div>
+    </div>
+  </div>
+  <div id="js-clock-2" class="clock2">
+    <div class="clock__minutes">
+      <span id="js-minutes"></span>
+      <div>Minutes</div>
+    </div>
+    <div class="clock__seconds">
+      <span id="js-seconds"></span>
+      <div>Seconds</div>
+    </div>
+  </div>
+
+  <audio id="audio" loop>
+    <source src="cutemusic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <!-- partial -->
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    function playMusic() {
+      const audio = document.getElementById('audio');
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+
+</html>
