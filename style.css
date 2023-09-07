@@ -10,7 +10,7 @@ body {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
+  font-size: 45px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.25);
 }
@@ -120,9 +120,22 @@ body {
 }
 
 .cutegif img{
+  height: 250px;
   width: auto;
-  height: 330px;
   margin-top: 70px;
+}
+
+.container.full-width {
+  width: 100%;
+  height: 100vh; /* Make the container match the viewport height */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+.bgif img{
+  height: 100%; /* Make the image height match the container's height */
+  width: 100%; /* Allow the width to adjust proportionally */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  opacity: 20%;
 }
 
 /* Add a new CSS rule for smaller screens (mobile devices) */
