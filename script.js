@@ -40,7 +40,7 @@ function countdown(endDate) {
 }
 
 (function () {
-  const endDate = new Date('2024-09-08');
+  const endDate = new Date('2025-09-08');
   endDate.setHours(0, 0, 0, 0);
   countdown(endDate);
 })();
